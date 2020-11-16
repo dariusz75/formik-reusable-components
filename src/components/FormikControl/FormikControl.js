@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Input, TextArea, Select } from "../../components";
+import { Input, TextArea, Select, Radio } from "../../components";
 
 const FormikControl = (props) => {
   const { control, ...rest } = props;
@@ -13,6 +13,7 @@ const FormikControl = (props) => {
     case "select":
       return <Select {...rest} />;
     case "radio":
+      return <Radio {...rest} />;
     case "checkbox":
     case "date":
     default:
